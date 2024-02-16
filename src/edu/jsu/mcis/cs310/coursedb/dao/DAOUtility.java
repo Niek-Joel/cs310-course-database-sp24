@@ -16,8 +16,18 @@ public class DAOUtility {
         
             if (rs != null) {
 
-                // INSERT YOUR CODE HERE
-
+                ResultSetMetaData rsmd = rs.getMetaData();
+                
+                while (rs.next()) {
+                    JsonObject row = new JsonObject();   // A single record
+                    for (int i=1; i <= rsmd.getColumnCount(); i++) {
+                        String columnName = rsmd.getColumnName(i);
+                        String columnValue = rs.getString(columnName);
+                        row.put(columnName, columnValue);
+                    }
+                    records.add(row);
+                    //System.out.println("records size = " + records.size() + " = " + row);
+                }
             }
             
         }

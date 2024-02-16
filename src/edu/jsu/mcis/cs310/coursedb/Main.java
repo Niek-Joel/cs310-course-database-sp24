@@ -26,7 +26,11 @@ public class Main {
             System.out.println("Connected Successfully!");
             
         }
-        
+        // TESTING
+        //sectionDao.find(1, "CS", "201");   // For "search"
+        //registrationDao.create(1, 1, 10520);   // for "register"
+        //registrationDao.delete(1, 1, 10520);   // for "drop" one cours
+        //registrationDao.list(1,1);
     }
     
 }
