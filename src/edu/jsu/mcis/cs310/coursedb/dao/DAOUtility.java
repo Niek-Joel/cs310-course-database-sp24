@@ -26,7 +26,6 @@ public class DAOUtility {
                         row.put(columnName, columnValue);
                     }
                     records.add(row);
-                    //System.out.println("records size = " + records.size() + " = " + row);
                 }
             }
             

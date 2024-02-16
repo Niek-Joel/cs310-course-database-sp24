@@ -41,7 +41,6 @@ public class SectionDAO {
                 if (hasResults) {
                     rs = ps.getResultSet();
                     result = DAOUtility.getResultSetAsJson(rs);
-                    //System.out.println(result);
                 }
                 
             }

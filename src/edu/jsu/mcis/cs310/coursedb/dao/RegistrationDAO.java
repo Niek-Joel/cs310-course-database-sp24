@@ -54,7 +54,6 @@ public class RegistrationDAO {
             if (ps != null) { try { ps.close(); } catch (Exception e) { e.printStackTrace(); } }
             
         }
-        System.out.println("result for create = " + result);
         return result;
         
     }
@@ -171,7 +170,6 @@ public class RegistrationDAO {
                 if (hasResults) {
                     rs = ps.getResultSet();
                     result = DAOUtility.getResultSetAsJson(rs);
-                    System.out.println(result);
                 }
                 
             }
